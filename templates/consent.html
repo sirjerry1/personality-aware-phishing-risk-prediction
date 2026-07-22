@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}
+Participant Consent
+{% endblock %}
+
+{% block content %}
+
+<div class="card shadow p-4">
+
+<h2>Participant Information and Consent</h2>
+
+<p>
+Thank you for your interest in participating in this research.
+</p>
+
+<p>
+Please read the information below before continuing.
+</p>
+
+<ul>
+
+<li>Your participation is voluntary.</li>
+
+<li>Your responses are anonymous.</li>
+
+<li>You may withdraw before submitting.</li>
+
+<li>No personally identifiable information will be collected.</li>
+
+</ul>
+
+<form method="POST">
+
+<div class="form-check">
+
+<input
+class="form-check-input"
+type="checkbox"
+required
+id="consent">
+
+<label
+class="form-check-label"
+for="consent">
+
+I have read the participant information and I agree to participate in this study.
+
+</label>
+
+</div>
+
+<br>
+
+<button
+class="btn btn-success"
+type="submit">
+
+Continue
+
+</button>
+
+</form>
+
+</div>
+
+{% endblock %}
