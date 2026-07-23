@@ -231,7 +231,7 @@ def tipi():
 def phishing(scenario_number):
 
     if scenario_number < 1 or scenario_number > len(phishing_scenarios):
-        return redirect(url_for("thank_you"))
+        return redirect(url_for("feedback"))
 
     if request.method == "POST":
 
@@ -253,7 +253,7 @@ def phishing(scenario_number):
         connection.close()
 
         if scenario_number == len(phishing_scenarios):
-            return redirect(url_for("thank_you"))
+            return redirect(url_for("feedback"))
 
         return redirect(url_for("phishing", scenario_number=scenario_number + 1))
 
@@ -265,6 +265,38 @@ def phishing(scenario_number):
         scenario_number=scenario_number,
         total_scenarios=len(phishing_scenarios)
     )
+
+@app.route("/feedback", methods=["GET", "POST"])
+def feedback():
+
+    if request.method == "POST":
+
+        participant_id = session["participant_id"]
+
+        confidence = request.form["confidence"]
+        comments = request.form["comments"]
+
+        connection = get_connection()
+        cursor = connection.cursor()
+
+        cursor.execute("""
+        UPDATE participants
+        SET
+            confidence = ?,
+            comments = ?
+        WHERE id = ?
+        """, (
+            confidence,
+            comments,
+            participant_id
+        ))
+
+        connection.commit()
+        connection.close()
+
+        return redirect(url_for("thank_you"))
+
+    return render_template("feedback.html")
 
 @app.route("/thank_you")
 def thank_you():

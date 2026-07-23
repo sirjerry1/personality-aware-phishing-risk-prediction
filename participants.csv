@@ -1,0 +1,12 @@
+id,age,gender,occupation,education,email_use,cyber_training,tipi_q1,tipi_q2,tipi_q3,tipi_q4,tipi_q5,tipi_q6,tipi_q7,tipi_q8,tipi_q9,tipi_q10,scenario1,scenario2,scenario3,scenario4,scenario5,confidence,comments
+1,25–34,Male,Student,Bachelor's Degree,Several times a day,Yes,,,,,,,,,,,,,,,,,
+2,25–34,Male,Student,Bachelor's Degree,Several times a day,Yes,,,,,,,,,,,,,,,,,
+3,25–34,Male,Student,Bachelor's Degree,Several times a day,Yes,3.0,6.0,5.0,7.0,7.0,7.0,5.0,2.0,6.0,1.0,,,,,,,
+4,25–34,Male,Student,Bachelor's Degree,Several times a day,Yes,2.0,1.0,6.0,5.0,6.0,7.0,5.0,3.0,6.0,1.0,,,,,,,
+5,18–24,Male,Student,Bachelor's Degree,Several times a day,Yes,,,,,,,,,,,,,,,,,
+6,18–24,Male,Student,Bachelor's Degree,Several times a day,Yes,1.0,2.0,2.0,4.0,4.0,6.0,5.0,5.0,4.0,5.0,3.0,,,,,,
+7,18–24,Male,Student,Secondary School,Once a day,No,1.0,4.0,6.0,5.0,4.0,5.0,4.0,4.0,3.0,3.0,,,,,,,
+8,18–24,Male,Unemployed,Bachelor's Degree,Once a day,No,2.0,3.0,5.0,4.0,3.0,2.0,5.0,2.0,6.0,4.0,1.0,3.0,1.0,2.0,1.0,,
+9,25–34,Prefer not to say,Employed,Diploma,A few times a week,No,5.0,5.0,5.0,4.0,4.0,1.0,3.0,5.0,3.0,2.0,1.0,2.0,3.0,1.0,,,
+10,18–24,Male,Student,Undergraduate,Several times a day,Yes,7.0,1.0,4.0,5.0,6.0,7.0,6.0,1.0,6.0,1.0,2.0,3.0,2.0,2.0,2.0,,
+11,55+,Female,Employed,Master's Degree,Several times a day,Yes,7.0,2.0,6.0,4.0,6.0,7.0,5.0,1.0,6.0,1.0,3.0,3.0,2.0,4.0,1.0,5.0,
