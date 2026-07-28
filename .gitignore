@@ -19,3 +19,9 @@ Thumbs.db
 
 # Research Database
 research.db
+
+# Exported Research Data
+participants.csv
+
+# Jupyter Notebooks
+.ipynb_checkpoints/

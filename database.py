@@ -1,11 +1,14 @@
 import os
 import sqlite3
 
-def get_connection():
-    database_path = os.path.abspath("research.db")
-    print("Database Path:", database_path)
+from config import Config
 
-    connection = sqlite3.connect(database_path)
+from config import Config
+
+def get_connection():
+    print("Database Path:", Config.DATABASE)
+
+    connection = sqlite3.connect(Config.DATABASE)
     connection.row_factory = sqlite3.Row
     return connection
 

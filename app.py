@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from database import get_connection
 
 app = Flask(__name__)
+app.config.from_object("config.Config")
+app.secret_key = app.config["SECRET_KEY"]
 
 tipi_questions = [
     "1. I see myself as extraverted, enthusiastic.",
@@ -106,7 +108,7 @@ phishing_scenarios = [
 
 ]
 
-app.secret_key = "miva_open_university_final_year_project"
+
 
 
 @app.route("/")
